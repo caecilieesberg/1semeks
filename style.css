@@ -112,19 +112,25 @@ h4{
 }
 .kompetencer{
     background-color: var(--primary-color);
-    padding-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-.flex-container {
+.flex-container-kompetencer {
     display: flex;
+    margin-bottom: 30px;
   }
   
-  .flex-container > div {
+.flex-container-kompetencer > div {
     margin: 1px;
-    text-align: center;
-    line-height: 75px;
     font-size: 30px;
   }
-  .html{
-      width: 80px;
-      margin-left: 30px;
+.billedekom{
+    width: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
+p{
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
