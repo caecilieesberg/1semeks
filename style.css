@@ -184,6 +184,25 @@ footer{
     margin-top: 150px;
     margin-left: 40px;
 }
+.tekstgroenvilje h1{
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.tekstgroenvilje p{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.xd{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.linktilløsning {
+    color: var(--quarternary-color);
+    text-decoration: underline;
+    font-size: 20px;
+    margin-left: 119px;
+}
 
 
 
