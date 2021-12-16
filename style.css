@@ -133,10 +133,10 @@ h4{
 p{
     font-size: 15px;
     margin-bottom: 30px;
+    margin-top: 0px;
 }
 
 .portfolio{
-    background-color: var(--primary-color);
     padding: 20px;
 }
 .flex-container-portfolio{
@@ -145,25 +145,26 @@ p{
 
 }
 .startup {
-    width: 150px;
+    width: 120px;
     margin-left: 20px;
     margin-right: 20px;
+    padding: 20px 10px 20px 10px;
 }
-.racesbox{
-    background-color:var(--quinary-color);
-}
-.races{
+
+.racesfirst{
     width: 150px;
-    padding-top: 45px;
+    margin-top: 20px;
 }
 .groenvilje{
     width: 150px;
     margin-left: 20px;
     margin-top: 30px;
+ 
 }
 .zumba{
     width: 150px;
     margin-left: 20px;
+  
 }
 .fangmig i{
     font-size: 70px;
@@ -177,7 +178,7 @@ footer{
     background-color: var(--quarternary-color);
     color: var(--senary-color);
     text-align: center;
-   padding: 10px;
+    height: 25px;
 }
 .startupside{
     width: 300px;
@@ -202,9 +203,36 @@ footer{
     text-decoration: underline;
     font-size: 20px;
     margin-left: 119px;
+    margin: 20px;
 }
+
 .racesside{
     background-color: var(--quinary-color);
+    width: 90%;
+    margin-top: 150px;
+    margin-left: 15px;
+}
+.races{
+    width:90%;
+    margin-left: 15px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.racessamlet{
+    width: 90%;
+    margin-left: 15px;
+}
+.farver{
+    width: 90%;
+    margin-left: 15px;
+}
+.moodboard{
+    width: 90%;
+    margin-left: 15px;
+}
+h2{
+    font-size: 15px;
+    text-align: center;
 }
 
 
