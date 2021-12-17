@@ -49,7 +49,7 @@ body{
 }
 h1{
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 h4{
     font-size: 15px;
@@ -108,6 +108,7 @@ p{
     font-size: 15px;
     margin-bottom: 30px;
     margin-top: 0px;
+    margin-left: 20px;
 }
 
 .portfolio{
@@ -177,8 +178,16 @@ footer{
     color: var(--quarternary-color);
     text-decoration: underline;
     font-size: 20px;
-    margin-left: 119px;
     margin: 20px;
+    position: relative;
+    left: 300px;
+}
+.linktilløsningen{
+    color: var(--quarternary-color);
+    text-decoration: underline;
+    font-size: 30px;
+    margin: 20px;
+    margin-left: 70px;
 }
 
 .racesside{
@@ -213,6 +222,18 @@ h2{
     width: 90%;
     margin-left: 15px;
 }
+.uddannelse{
+    background-color: var(--primary-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.uddannelse p{
+    margin-left: 20px;
+    color: var(--quarternary-color);
+}
+.uddannelse h4{
+    margin-left: 20px;
+}
 /*her kommer stylingen af mit første media queries*/
 @media screen and (min-width: 700px) {
     .topnav{
@@ -237,6 +258,9 @@ h2{
     }
     .fangmig i{
         font-size:100px ;
+    }
+    .fangmig p{
+        margin-left: 100px;
     }
     .instagram{
         margin-left: 170px;
@@ -333,7 +357,39 @@ h2{
     .linktilløsning{
         margin-left: 250px;
     }
+    .startup{
+        width: 250px;
+    }
+    .racesfirst{
+        width: 320px;
+    }
+    .groenvilje{
+        width: 300px;
+    }
+    .zumba{
+        width: 250px;
+    }
+    .uddannelse h4{
+        margin-left: 100px;
+    }
+    .uddannelse p{
+        margin-left: 100px;
+    }
 }
+@media screen and (min-width: 1300px) {
+    .instagram{
+        margin-left: 500px;
+    }
+    .startupside{
+        margin-left: 550px;
+    }
+    .racesside{
+        margin-left: 500px;
+    }
+    .linktilløsning{
+        position: relative;
+        left: 400px;
+    }
 
 
-
+}
