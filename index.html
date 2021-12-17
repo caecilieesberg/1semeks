@@ -4,38 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css"> 
-    <script src="https://kit.fontawesome.com/e414acdc27.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" type="text/css" href="style.css">  
     <title>Portfolio</title>
 </head>
 <body>
     <header>
-        <nav class="navigation">
+        <nav class="navigation"><!--min navigationsbar til web-->
             <a href="index.html"> <img class="logo" src="logo.png" alt="logo"></a>
-            <button class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
-            </button>
-        <ul class="nav-ul" id="nav-ul">
-            <li>
-                <a href="">Hvem er jeg?</a>
-            </li>
-            <li>
-                <a href="">Kompetencer</a>
-            </li>
-            <li>
-                <a href="">Mit team</a>
-            </li>
-            <li>
-                <a href="">Portfolio</a>
-            </li>
-            <li>
-                <a href="">Kontakt</a>
-            </li>
-        </ul>
+            <div class="topnav">
+                <a href="#jump1">Hvem er jeg?</a>
+                <a href="#jump2">Kompetencer</a>
+                <a href="#jump3">Portfolio</a>
+                <a href="#jump4">Fang mig</a>
+              </div>
+            <a class="active" href="index.html">Hjem</a><!--min navbar til mobil-->
     </nav>
     </header>
     <img class="forside" src="forside.png" alt="forside">
-    <h1>Hvem er jeg?</h1>
+    <h1 id="jump1">Hvem er jeg?</h1>
     <div class="grid-container">
         <div class="item1">    
             <img class="hvemerjeg" src="hvemerjeg.png" alt="hvemerjeg"></div>
@@ -50,7 +36,7 @@
             lide at følge processen fra start til slut.</p>
     </div>
     <section class="kompetencer">
-    <h1>Kompetencer</h1>
+    <h1 id="jump2">Kompetencer</h1>
     <div class="flex-container-kompetencer">
         <div> <img class="billedekom" src="html.png" alt="html">
         </div>
@@ -60,7 +46,7 @@
                 har jeg erfaring med HTML og CSS. </p>
         </div>
     </div>
-      <div class="flex-container-kompetencer">
+      <div class="flex-container-kompetencer"><!--har brugtskabelon som vi fik fra 3. semester da de var og undervise os.-->
         <div> <img class="billedekom" src="web-design.png" alt="web-design">
         </div>
         <div>
@@ -85,9 +71,8 @@
             </div>
         </div>
     </section>
-
-<section class="portfolio"> <!--ideen til at linkemine billeder så man kan trykke på dem, kommer fra w3schools-->
-    <h1>Portfolio</h1>
+    <h1 id="jump3">Portfolio</h1>
+<section class="portfolio"> <!--ideen til at linke mine billeder så man kan trykke på dem, kommer fra w3schools-->
     <div class="flex-container-portfolio">
         <a href="startup.html">
             <img src="startup.png" class="startup" alt="startup">
@@ -108,17 +93,17 @@
     </div>
 </section>
 
-    <h1>Fang mig</h1>
+    <h1 id="jump4">Fang mig</h1>
     <div class="fangmig"> 
+        <a id="fangmig"></a>
         <p>Lyder jeg som noget din virksomhed kan bruge så kontat mig på et af nedenstående link</p>
         <a class="instagram" href="https://www.instagram.com/caecilie.esberg/"><i class="fab fa-instagram"></i></a> <!--fundet på fontawsome, og der er linket til min instagram, facebook og linkedIn-->
-        <a class="linkedin" href="https://www.linkedin.com/in/cæcilie-esberg-82099821b/"><i class="fab fa-linkedin"></i></a> <!--linket til vores profil hvis man trykker på ikonet-->
-        <a class="facebook" href=""><i class="fab fa-facebook-square"></i></a>
-        <a class="mail" href="cille.esberg@gmail.com"><i class="fas fa-at"></i></a>
+        <a class="linkedin" href="https://www.linkedin.com/in/cæcilie-esberg-82099821b/"><i class="fab fa-linkedin"></i></a> <!--linket til min profil hvis man trykker på ikonet-->
+        <a class="facebook" href="https://www.facebook.com/cille.esberg"><i class="fab fa-facebook-square"></i></a>
+        <a href="cille.esberg@gmail.com"><i class="fas fa-at"></i></a>
     </div>
 <footer>
     <p>Made by Cæcilie Esberg</p>
 </footer>
-    <script src="script.js"></script> <!--linket til javaskript-->
 </body>
 </html>

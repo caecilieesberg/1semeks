@@ -1,4 +1,4 @@
-:root {
+:root { /*her har jeg defineret mine farver og min font*/
     --primary-color: #bdbed0;
     --secondary-color: #aba9c3;
     --tertiary-color: #6983b8;
@@ -7,6 +7,7 @@
     --senary-color: #f9f0f2;
     --septernary-color: #f5f5f5;
 }
+/*Her er stylingen af min body som er fælles for alle sider*/
 body{
     background-color: var(--senary-color);
     margin: 0;
@@ -26,52 +27,21 @@ body{
     position: fixed;
     top: 0;
 }
+.active{ /*styling af min tekst i navbaren*/
+    margin-right: 20px;
+    font-size: 25px;
+    text-decoration: none;
+    color: var(--quarternary-color);
+}
 
 .logo {
     width: 80px;
     display: block;
     padding: 8px;
+    margin-left: 20px;
 }
-
-.nav-ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    margin: 0;
+.topnav{ /*topnav er none for at den ikke er synlig i mobilversion*/
     display: none;
-    flex-direction: column;
-}
-
-.nav-ul a {
-    text-decoration: none;
-    color: var(--primary-color);
-    padding: 14px 16px;
-    text-align: center;
-    font-size: 24px;
-}
-
-/*Her er stylingen der laver hamburger menuen.*/
-.hamburger {
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-    color: var(--quinary-color);
-    font-size: 26px;
-    display: block;
-    padding: 40px;
-}
-
-.hamburger:focus {
-    outline: none;
-}
-
-.nav-ul.show {
-    display: flex;
-}
-
-.show {
-    display: block;
 }
 .forside {
     width: 100%;
@@ -89,7 +59,7 @@ h4{
     width: 170px;
     margin-right: 10px;
 }
-
+/*Her er stylingen af mit grid og opsætningen af det*/
 .item1 { grid-area: menu; }
 .item2 { grid-area: main; }
 .item3 { grid-area: midt; }
@@ -106,7 +76,7 @@ h4{
     text-align: center;
     background-color: var(--primary-color);
     margin: 30px;
-    line-height: 21px;
+    line-height: 25px;
 }
 .hvemerjegbox p{
     padding: 10px;
@@ -116,6 +86,7 @@ h4{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+/*Styling af min flex container*/
 .flex-container-kompetencer {
     display: flex;
     margin-bottom: 30px;
@@ -124,7 +95,10 @@ h4{
 .flex-container-kompetencer > div {
     margin: 1px;
     font-size: 30px;
-  }
+}
+.kompetencer p{
+    margin-right: 20px;
+}
 .billedekom{
     width: 80px;
     margin-left: 30px;
@@ -139,6 +113,7 @@ p{
 .portfolio{
     padding: 20px;
 }
+/*Styling af mine flexcontainer. De er stylet sammen da de skal ligne hinanden*/
 .flex-container-portfolio{
     display: flex;
     flex-direction: row;
@@ -163,9 +138,9 @@ p{
 }
 .zumba{
     width: 150px;
-    margin-left: 20px;
-  
+    margin-left: 20px; 
 }
+/*styling af mine ikoner*/
 .fangmig i{
     font-size: 70px;
     padding: 10px;
@@ -198,7 +173,7 @@ footer{
     width: 100%;
     margin-bottom: 30px;
 }
-.linktilløsning {
+.linktilløsningen {
     color: var(--quarternary-color);
     text-decoration: underline;
     font-size: 20px;
@@ -234,8 +209,131 @@ h2{
     font-size: 15px;
     text-align: center;
 }
+.analyse{
+    width: 90%;
+    margin-left: 15px;
+}
+/*her kommer stylingen af mit første media queries*/
+@media screen and (min-width: 700px) {
+    .topnav{
+        display: block;
+        position: relative;
+        margin: 10px;
+        padding: 10px;
+    }
+    .topnav a{
+        text-decoration: none;
+        padding: 20px;
+        font-size: 20px;
+        color: var(--quarternary-color);
+    }
+    .active{
+        display: none;
+    }
+    .portfolio{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .fangmig i{
+        font-size:100px ;
+    }
+    .instagram{
+        margin-left: 170px;
+    }
+    p{
+        font-size: 25px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h4{
+        font-size: 30px;
+    }
+    .hvemerjeg{
+        width: 300px;
+    }
+    .startupside{
+        margin-left: 350px;
+    }
+    .linktilløsning{
+        font-size: 30px;
+    }
+    .farver{
+        width: 60%;
+        margin-left: 200px;
+        
+    }
+    .moodboard{
+        width: 60%;
+        margin-left: 200px;
+    }
+    .linktilløsning{
+        margin-left: 200px; 
+    }
+}
+/*styling af mit andet media queries*/
+@media screen and (min-width: 1000px) {
+    .topnav a{
+        font-size: 30px;
+    }
+    .hvemerjeg{
+        margin-left: 70px;
+    }
+    .hvemerjegbox{
+        width: 60%;
+        position: relative;
+        left:300px ;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    .portfolio{
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .groenvilje{
+        margin-right: 40px;
+    }
+    .racesfirst{
+        margin-left: 40px;
+    }
+    .instagram{
+        margin-left: 300px;
+    }
+    .racesside{
+        width: 500px;
+        margin-left: 280px;
+    }
 
-
+}
+/*styling af mit sidste media queries*/
+@media screen and (min-width: 1100px) {
+    .instagram{
+        margin-left: 400px;
+    }
+    .startupside{
+        margin-left: 480px;
+    }
+    .racesside{
+        margin-left: 400px;
+    }
+    .farver{
+        margin-left: 250px;
+    }
+    .moodboard{
+        margin-left: 250px;
+    }
+    .linktilløsning{
+        margin-left: 250px;
+    }
+}
 
 
 
